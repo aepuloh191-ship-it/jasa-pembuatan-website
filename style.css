@@ -1,102 +1,75 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(180deg, #020617, #020617);
-  color: #e5e7eb;
+  background: #0f172a;
+  color: #ffffff;
 }
 
 /* HERO */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
+  background: url("img/hero.png") center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background: radial-gradient(circle at top, #1e293b, #020617);
-}
-
-.hero-box {
+  align-items: center;
   text-align: center;
-  padding: 40px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 60px rgba(56,189,248,0.15);
+  padding: 20px;
 }
 
-.hero h1 {
-  font-size: 34px;
+.overlay h1 {
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-.hero p {
-  color: #94a3b8;
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #cbd5f5;
 }
 
-/* BUTTON */
-.btn-glow {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 30px;
-  background: linear-gradient(90deg, #22c55e, #4ade80);
-  color: #022c22;
+.btn {
+  background: #22c55e;
+  color: #000;
+  padding: 14px 28px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 999px;
-  box-shadow: 0 0 25px rgba(34,197,94,0.6);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 30px;
 }
 
-.btn-glow:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 40px rgba(34,197,94,0.9);
-}
-
-/* SECTION */
-.section {
-  padding: 80px 20px;
+/* SERVICES */
+.services {
+  padding: 50px 20px;
   text-align: center;
 }
 
-.section.dark {
-  background: #020617;
-}
-
-.section h2 {
-  font-size: 28px;
+.services h2 {
   margin-bottom: 30px;
 }
 
-/* CARDS */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
 .card {
-  padding: 25px 30px;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 25px rgba(0,0,0,0.4);
-  min-width: 220px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 40px rgba(56,189,248,0.4);
+  background: #1e293b;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 300px;
+  border-radius: 15px;
 }
 
 /* FOOTER */
 footer {
-  padding: 30px;
   text-align: center;
-  font-size: 14px;
-  color: #64748b;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #94a3b8;
 }

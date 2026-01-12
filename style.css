@@ -15,7 +15,7 @@ body {
   height: 100vh;
   .hero {
   height: 300px;
-  background: url("img/hero.png.PNG") center/cover no-repeat;
+  background: url("img/hero.png") center/cover no-repeat;
   border-radius: 20px;
 }
   position: relative;

@@ -13,7 +13,7 @@ body {
 /* HERO */
  .hero {
   height: 100vh;
-  background: url("img/A_website_mockup_for_a_professional_website_creati.png") center/cover no-repeat;
+  background-image: url("../img.hero.png") center/cover no-repeat;
   position: relative;
 }
   
